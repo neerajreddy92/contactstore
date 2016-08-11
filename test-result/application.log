@@ -1,0 +1,5 @@
+11 Aug 2016 12:24:59,013 INFO  ~ Starting C:\Users\Neeraj\Documents\Applications\new_play\contactstore
+11 Aug 2016 12:24:59,715 WARN  ~ You're running Play! in DEV mode
+11 Aug 2016 12:24:59,812 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+11 Aug 2016 12:25:04,232 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+11 Aug 2016 12:25:04,978 INFO  ~ Application 'contactstore' is now started !

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<testsuite failures="1" time="5.876" errors="0" skipped="0" tests="0" name="email.SendEmailTest">
+  <testcase classname="email.SendEmailTest" name="sendmailtest" time="5.876">
+                  <failure type="" message="Failure, expected:&lt;true&gt; but was:&lt;false&gt;">
+        <![CDATA[
+          In /test/email/SendEmailTest.java, line 11
+          
+              		assertEquals(true, sendMail.send(&quot;reddy.neeraj007@gmail.com&quot;, &quot;neeraj&quot;, &quot;some random guy&quot;)); :
+          
+        ]]>
+        </failure>
+        }
+                  </testcase>
+</testsuite>

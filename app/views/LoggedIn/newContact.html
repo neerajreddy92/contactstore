@@ -1,0 +1,59 @@
+#{extends 'main.html' /}
+#{set title:'add a new contact' /}
+
+<h1>Add Contact</h1>
+<div id="options">
+                  
+                    <a href="@{LoggedIn.index()}">home</a>
+                    
+                    <a href="@{Application.logout()}">Logout</a>
+                </div>
+#{form @saveContact()}
+
+    #{field 'contacts.firstname'}
+        <p class="${field.errorClass}">
+            <strong>First Name:</strong> <input type="text" name="${field.name}" size="16" value="${contacts?.firstname}"> *
+            <span class="error">${field.error}</span>
+        </p>
+    #{/field}
+    #{field 'contacts.lastname'}
+        <p class="${field.errorClass}">
+            <strong>Last Name:</strong> <input type="text" name="${field.name}" size="16" value="${contacts?.lastname}"> *
+            <span class="error">${field.error}</span>
+        </p>
+    #{/field}
+    #{field 'contacts.email'}
+        <p class="${field.errorClass}">
+            <strong>Email:</strong> <input type="text" name="${field.name}" size="16" value="${contacts?.email}"> *
+            <span class="error">${field.error}</span>
+        </p>
+    #{/field}
+     #{field 'contacts.dateofbirth'}
+        <p class="${field.errorClass}">
+            <strong>DOB:</strong> <input type="date" name="${field.name}" value="${contacts?.dateofbirth}"> *
+            <span class="error">${field.error}</span>
+        </p>
+    #{/field}
+     #{field 'contacts.mobilephone'}
+        <p class="${field.errorClass}">
+            <strong>Mobile:</strong> <input type="number" name="${field.name}" size="16" value="${contacts?.mobilephone}"> 
+            <span class="error">${field.error}</span>
+        </p>
+    #{/field}
+     #{field 'contacts.homephone'}
+        <p class="${field.errorClass}">
+            <strong>HomePh:</strong> <input type="number" name="${field.name}" size="16" value="${contacts?.homephone}"> 
+            <span class="error">${field.error}</span>
+        </p>
+    #{/field}
+     #{field 'contacts.address'}
+        <p class="${field.errorClass}">
+            <strong>Address:</strong> <input type="text" name="${field.name}" size="16" value="${contacts?.address}"> 
+            <span class="error">${field.error}</span>
+        </p>
+    #{/field}
+    
+    <p class="buttons">
+        <input type="submit" value="newContact"> <a href="@{index()}">Cancel</a>    
+    </p>
+#{/form}
